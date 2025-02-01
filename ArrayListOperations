@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+class Main{
+    public static void main(String[] args){
+        
+        ArrayList<String> al = new ArrayList<String>();
+        
+        al.add("Placement");
+        al.add("Program");
+        
+        System.out.println("Original List:" + al);
+        
+        al.add(1, "Assistance");
+        
+        System.out.println("Adding element at index1:" + al);
+        
+        al.remove(0);
+        
+        System.out.println("Element at position 0 removed from list:" + al);
+        
+        al.remove("Assistance");
+        System.out.println("Element Assistance removed from List:" + al);
+        
+        al.set(0, "PAP");
+        
+        System.out.println("List Updated:" + al);
+    }
+}
